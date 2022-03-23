@@ -49,3 +49,6 @@ let uppCase = minusc.toUpperCase();
 console.log(uppCase);
     //toLowerCase():
 console.log(uppCase.toLowerCase());
+    //substr():
+let string = 'JavaScript';
+console.log(string.substr(4,6));
