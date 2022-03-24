@@ -51,4 +51,34 @@ console.log(uppCase);
 console.log(uppCase.toLowerCase());
     //substr():
 let string = 'JavaScript';
-console.log(string.substr(4,6));
+console.log(string.substr(4,6)); // It takes two arguments, the starting index and number of characters to slice.
+    //substring():
+let sTring = 'JavaScript';
+console.log( sTring.substring(0,4) );
+console.log( sTring.substring(4,10) ); // It takes two arguments, the starting index and the stopping index but it doesn't include the character at the stopping index.
+    //split(): The split method splits (divide) a string at a specified place.
+let stringg = '30 Days Of JavaScript';
+console.log( stringg.split() ); // Changes to an array -> ["30 Days Of JavaScript"]
+console.log( stringg.split(' ') );  // Split to an array at space -> ["30", "Days", "Of", "JavaScript"]
+
+let firstName = 'Asabeneh';
+console.log( firstName.split() ); // Change to an array - > ["Asabeneh"]
+console.log(firstName.split('')); // Split to an array at each letter -> ["A", "s", "a", "b", "e","n","e","h"]
+
+let countries = 'Finland, Sweden, Norway, Denmark, and Iceland';
+
+console.log( countries.split(',') ); // split to any array at comma -> ["Finland", " Sweden", " Norway", " Denmark", " and Iceland"]
+console.log( countries.split(', ') ); // ["Finland", "Sweden", "Norway", "Denmark", "and Iceland"]
+
+    // trim(): Removes trailing space in the beginning or the end of a string.
+let string0 = '   30 Days Of Javacript   ';
+console.log( string0 );
+console.log( string.trim(' ') );
+
+let firstNamE = '       Asabeneh        ';
+console.log( firstNamE );
+console.log( firstNamE.trim() ) // Still removes spaces at the beginning and the end of the string
+
+    //includes(): It takes a substring argument and it checks if substring argument
+                            //exists in the string. includes() returns a boolean. If a substring
+                            //exist in a string, it returns true, otherwise it returns false.
