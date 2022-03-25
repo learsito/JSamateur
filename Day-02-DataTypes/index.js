@@ -15,13 +15,13 @@ let space = " ";
 let user = name + space + lastName +  space + age;
 console.log(user)
     //Escape sequences in strings
-/*let n = "New\nline\n";
-let t = "Tab \t means \t 8 spaces\n";
+let n = "New\nline\n";
+let t0 = "Tab \t means \t 8 spaces\n";
 let bs = "Back \\ slash\n";
 let sq = "Single \' quote\n";
 let db = "Double \" quote\n";
 
-console.log(n + t + bs + sq + db); */
+console.log(n + t0 + bs + sq + db);
 
     //Injecting data
 let d = 5;
