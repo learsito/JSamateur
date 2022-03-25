@@ -82,3 +82,43 @@ console.log( firstNamE.trim() ) // Still removes spaces at the beginning and the
     //includes(): It takes a substring argument and it checks if substring argument
                             //exists in the string. includes() returns a boolean. If a substring
                             //exist in a string, it returns true, otherwise it returns false.
+let string3 = '30 Days Of JavaScript';
+
+console.log(string3.includes('Days'))     // true
+console.log(string3.includes('days'))     // false - it is case sensitive!
+console.log(string3.includes('Script'))   // true
+console.log(string3.includes('script'))   // false
+console.log(string3.includes('java'))     // false
+console.log(string3.includes('Java'))     // true
+
+    //replace(): takes as a parameter the old substring and a new substring
+let string4 = '30 Days Of JavaScript';
+console.log(string4.replace('JavaScript','Python'));
+
+let country2 = 'Finland';
+console.log(country2.replace('Fin','Noman'));
+
+    //  charEt(): Takes index and it returns the value at that index
+let string5 = '30 Days Of JavaScript';
+console.log(string5.charAt(0));
+
+let lastIndex = string5.length - 1;
+console.log(string5.charAt(lastIndex));
+
+    // charCodeAt(): Takes index and it returns char code (ASCII number) of the value at that index
+    //(Idea para una web)
+let string6 = '30 Days Of JavaScript';
+console.log(string6.charCodeAt(3));
+
+let lastIndex0 = string.length - 1;
+console.log(string.charCodeAt(lastIndex0));
+
+    //indexOf(): Takes a substring and if the substring exist in a string it returns the first position of the substring, if does no exist it returns -1
+let string7 = '30 Days Of JavaScript';
+console.log(string7.indexOf('D'));
+console.log(string7.indexOf('Days'));
+console.log(string7.indexOf('days'));
+console.log(string7.indexOf('a'));
+console.log(string7.indexOf('JavaScript'));
+console.log(string7.indexOf('Script'));
+console.log(string7.indexOf('script'));
