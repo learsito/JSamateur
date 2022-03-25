@@ -122,3 +122,122 @@ console.log(string7.indexOf('a'));
 console.log(string7.indexOf('JavaScript'));
 console.log(string7.indexOf('Script'));
 console.log(string7.indexOf('script'));
+    //lastIndexOf(): Takes a substring and if the substring exist in a string it returns the last position of the substring, if it does not exist it returns -1
+let string8 = 'I love JavaScript. If you do not love JavaScript what else can you love';
+console.log(string8.lastIndexOf('love'));
+console.log(string8.lastIndexOf('you'));
+console.log(string8.lastIndexOf('JavaScript'));
+    //concat(): it takes many substrings and joins them.
+let string9 = '30';
+console.log(string9.concat("Days", "Of", "JavaScript"));
+let country0 = "Fin";
+console.log(country0.concat("land"));
+
+    //startsWith(): it takes a substring as an argument and it checks if the string starts with that specified substring. It returns a boolean (true or false)
+let string10 = 'Love is the best to in this world';
+console.log(string10.startsWith('Love'));
+console.log(string10.startsWith('love'));
+console.log(string10.startsWith('world'));
+
+let country1 = 'Finland';
+console.log(country1.startsWith('Fin'));
+console.log(country1.startsWith('fin'));
+console.log(country1.startsWith('land'));
+    //endsWith(): it takes a substring as an argument and it checks if the string ends with that specified substring. It returns a boolean (true or false).
+let stringends = 'Love is the most powerful feeling in the world';
+console.log(stringends.endsWith('world'));
+console.log(stringends.endsWith('love'));
+console.log(stringends.endsWith('in the world'));
+
+let countryEnds = 'Finland';
+
+console.log(countryEnds.endsWith('land'));
+console.log(countryEnds.endsWith('fin'));
+console.log(countryEnds.endsWith('Fin'));
+
+    //search(): it takes a substring as an argument and it returns the index of the first match. The search value can be a string or a regular expression pattern.
+let stringSearch = 'I love JavaScript. If you do not love JavaScript what else can you love.';
+console.log(stringSearch.search('love'));
+console.log(stringSearch.search(/javascript/gi));
+
+    // match: it takes a substring or regular expression pattern as an argument and it returns an array if there is a match if not it returns null.
+    // Let us see how a regular expression pattern looks like. It starts with / sign and ends tith / sign.
+
+let stringMatch = 'love';
+let patternOne = /love/;        // with out any flag
+let patternTwo = /love/gi;   // g.means to search in the whole text, i - case insensitive
+//Match syntax
+let stringMatch0 = 'I love JavaScript. If you do love JavaScript what else can you love.';
+console.log(stringMatch0.match('love'));
+
+let pattern = /love/gi;
+console.log(stringMatch0.match(pattern));
+//Let us extract numbers from text using a regular expression. This is not the regular expression section, do not panic! We will cover regular expressions later on.
+
+let txt = 'In 2019, I ran 30 Days of Python. Now, in 2020 I am super exited to start this challenge';
+let regEx = /\d+/;
+        // d with escape character means d not a normal d instead acts a digit
+        // + means one or more digit numbers,
+        // if there is g after that it means global, search everywhere.
+
+console.log(txt.match(regEx));
+console.log(txt.match(/\d+/g));
+
+    // repeat(): it takes a number as an argument and it returns the repeated version of the string.
+let stringRepeat = 'love';
+console.log(stringRepeat.repeat(10));
+
+        //Checking Data Types and Casting
+    //Checking Data Types: To check the data type of a certain variable we use the typeof method.
+let firstName0 = 'Asabeneh';
+let lastName0 = 'Yetayeh';
+let cpuntry = 'Finland';
+let city = 'Helsinki';
+let age0 = 250;
+let job;
+
+console.log(typeof 'Asabeneh');
+console.log(typeof firstName0);
+console.log(typeof 10);
+console.log(typeof 3.14);
+console.log(typeof true);
+console.log(typeof false);
+console.log(typeof NaN);
+console.log(typeof job);
+console.log(typeof undefined);
+console.log(typeof null);
+
+        //Changing Data Type (Casting): Casting = Converting one data type to another data type. We use parseInt(), parseFloat(), Number(), + sign, str() When we do arithmetic operations string numbers should be first converted to integer or float if not it returns an error.
+    //String to int:  We can convert string number to a number. Any number inside a quote is a string number. An example of a string number: '10', '5', ect. We can convert string to number using the following methods:
+    //parseInt()
+let num = '10';
+let numInt = parseInt(num);
+console.log(numInt);
+    //Number()
+let num0 = '10';
+let numInt0 = Number(num0);
+console.log(numInt0);
+    //Plus sign(+)
+let num1 = '10';
+let numInt1 = +num1;
+console.log(numInt1);
+        //String to Float: We can convert string float number to a float number. Any float number inside a quote is a string float number. An example of a string float number : '9.81','3.14','1.44', etc. We can convert string float to number using the following methods:
+    //parseFloat()
+let float = '9.81';
+let numFloat = parseFloat(float);
+console.log(numFloat);
+    //Number()
+let float0 = '9.81';
+let numFloat0 = Number(float0);
+console.log(numFloat0);
+    //Plus sign(+)
+let float1 = '9.81';
+let numFloat1 = +float1;
+console.log(numFloat1);
+
+        //Float to Int: We can convert float numbers to integers. We use the following method to convert float to int:
+    //parseInt()
+let float2 = 9.81;
+let floatInt = parseInt(float2);
+console.log(floatInt);
+
