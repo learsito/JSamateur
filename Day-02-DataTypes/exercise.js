@@ -35,4 +35,16 @@
     //15.- Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript.
         console.log( '15.- ', challenge.indexOf('a') );
     //16.- Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
-    console.log( '16.- ', challenge )
+        console.log( '16.- ', challenge.lastIndexOf('a') );
+    //17.-Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'. 
+        let because = 'You cannot end a sentence with because because because is a conjunction';
+        console.log('17.- ', because.indexOf('because') );
+    //18.- Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'.
+        console.log('18.- ', because.lastIndexOf('because') );
+    //19.- Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'.
+        console.log('19.- ', because.search('because'));
+    //20.- Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
+        let spaces = '          Do not let me with spaces          ';
+        console.log( '20.- ', spaces.trim( ' ' ) );
+    //21.- Use endsWith() method with the string 30 Days Of JavaScript and make the result true.
+        console.log( '21.- ', challenge.endsWith('JavaScript') );
