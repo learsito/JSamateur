@@ -46,5 +46,19 @@
     //20.- Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
         let spaces = '          Do not let me with spaces          ';
         console.log( '20.- ', spaces.trim( ' ' ) );
-    //21.- Use endsWith() method with the string 30 Days Of JavaScript and make the result true.
-        console.log( '21.- ', challenge.endsWith('JavaScript') );
+    //21.- Use startsWith() method with the string 30 Days Of JavaScript and make the result true.
+        console.log( '21.- ', challenge.startsWith('30') );
+    //22.- Use endsWith() method with the string 30 Days Of JavaScript and make the result true.
+        console.log( '22.- ', challenge.endsWith('JavaScript') );
+    //23.- Use match() method to find all the a’s in 30 Days Of JavaScript.
+        console.log( '23.- ', challenge.match('a') );
+    //24.- Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'.
+        let thirtyD = '30 Days Of ';
+        let JS = 'JavaScript';
+        console.log( '24.- ', thirtyD.concat( JS ) );
+    //25.- Use repeat() method to print 30 Days Of JavaScript 2 times.
+        let numY = 2;
+        console.log( '25.- ', challenge.repeat( numY ) );
+//Execise: Level 2
+    //1.- Using console.log() print out the following statement:
+        
