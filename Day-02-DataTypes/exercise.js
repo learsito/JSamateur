@@ -1,4 +1,5 @@
 //Exercise: Level 1
+    console.log( "\n                               Exercises - Level 1:\n" );
     //1.- Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'
         let challenge = '30 Days Of JavaScript';
         console.log("Exercises level one:");
@@ -60,5 +61,42 @@
         let numY = 2;
         console.log( '25.- ', challenge.repeat( numY ) );
 //Execise: Level 2
+    console.log( "\n                               Exercises - Level 2:\n" );
+    console.log( "Exercises level two:" );
     //1.- Using console.log() print out the following statement:
-        
+        let quoteHolmes = " The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes Teaches us to help one another. ";
+        console.log( "1.- ", quoteHolmes );
+    //2.- Using console.log() print out the following quote by Mother Teresa:
+        let quoteTeresa = "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.";
+        console.log( "2.- ", quoteTeresa );
+    //3.- Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+        let tenString = '10';
+        let tenNum = 10;
+        if (tenString === tenNum) {
+            console.log( tenString === tenNum );
+        } else {
+            console.log( "3.- ", parseInt(tenString) === tenNum );
+        }
+    //4.- Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+        let nineDotEight = '9.8';
+        if ( parseFloat(nineDotEight) == tenNum ) {
+            console.log( parseFloat(nineDotEight) == tenNum );
+        } else {
+            let nineFloat = parseFloat(nineDotEight);
+            console.log( "4.- ", Math.round(nineFloat) == tenNum );
+        }
+    //5.- Check if 'on' is found in both python and jargon.
+        let python = 'Python';
+        let jargon = 'Jargon';
+        console.log( "5.- ", python.includes('on') == jargon.includes('on') );
+    //6.- I hope this course is not full of jargon. Check if jargon is in the sentence.
+        let jargonSentence = "I hope this course is not full of jargon.";
+        console.log( "6.- ", jargonSentence.includes('jargon') );
+    //7.- Generate a random number between 0 and 100 inclusively.
+        let ranNum = Math.random();
+        let numBeZeTen = ranNum * 100;
+        let numBeZeTenFloor = Math.ceil(numBeZeTen);
+        console.log( "7.- ", numBeZeTenFloor);
+    //8.- Generate a random number between 50 and 100 inclusively.
+        let ranDom = Math.random();
+        let 
