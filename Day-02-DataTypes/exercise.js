@@ -99,4 +99,13 @@
         console.log( "7.- ", numBeZeTenFloor);
     //8.- Generate a random number between 50 and 100 inclusively.
         let ranDom = Math.random();
-        let 
+        let fifTy = ranDom * (100 - 50) + 50;
+        let raRanDom = Math.ceil(fifTy);
+        console.log( "8.- ", raRanDom); 
+    //9.- Generate a random number between 0 and 255 inclusively.
+        let renDom = Math.random();
+        let twoHun = renDom * 255;
+        let twHnum = Math.ceil(twoHun);
+        console.log( "9.- ", twHnum );
+    //10.- Access the 'JavaScript' string characters using a random number.
+        
