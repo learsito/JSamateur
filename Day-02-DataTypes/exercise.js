@@ -122,4 +122,13 @@
     console.log( "Exercises level three:" );
     //1.- 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
         let love = "Love is the best thing in this world. Some found their love and some are still looking for their love.";
-        console.log( "1.- ", love.match("Love")  );
+        let lovAr = love.match(/Love/gi);
+        let lovLen = lovAr.length; 
+        console.log( "1.- ", lovLen );
+    //2.- Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'.
+        let becAr = because.match(/because/gi);
+        let becLen = becAr.length;
+        console.log('2- ', becLen);
+    //3.- Clean the following text and find the most frequent word (hint, use replace and regular expressions).
+    const sentence = 'I am a teacher, and I love teaching. There is nothing as more rewarding as educating and empowering people. I found teaching more interesting than any other jobs. Does this motivate you to be a teacher? This 30 Days Of JavaScript is also the result of love of teaching';
+    console.log( "3.- ", sentence);
