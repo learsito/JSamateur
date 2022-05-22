@@ -130,5 +130,22 @@
         let becLen = becAr.length;
         console.log('2- ', becLen);
     //3.- Clean the following text and find the most frequent word (hint, use replace and regular expressions).
-    const sentence = 'I am a teacher, and I love teaching. There is nothing as more rewarding as educating and empowering people. I found teaching more interesting than any other jobs. Does this motivate you to be a teacher? This 30 Days Of JavaScript is also the result of love of teaching';
-    console.log( "3.- ", sentence);
+    const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching';
+
+    let sentence1 = sentence.replace('%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching','I am a teacher, and I love teaching. There is nothing as more rewarding as educating and empowering people. I found teaching more interesting than any other jobs. Does this motivate you to be a teacher? This 30DaysOfJavaScript is also the result of love of teaching')
+    let sentenceArray = sentence1.split(' ');
+
+    let sentenceL = sentenceArray.length;
+    
+
+    console.log( "3.- ", sentence1.match(sentenceArray[0]) );
+    
+
+    let firstWord = sentence.match(/I/gi);
+    let secondWord = sentence.match(/am/gi);
+    let tW = sentence.match(/a/gi);
+    let fW = sentence.match(/teacher/gi);
+    let fiW = sentence.match(/and/gi);
+    let sW = sentence.match(/love/gi);
+    let seW = sentence.match(/teaching/gi);
+    console.log(firstWord.length);
