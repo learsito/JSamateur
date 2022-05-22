@@ -108,4 +108,18 @@
         let twHnum = Math.ceil(twoHun);
         console.log( "9.- ", twHnum );
     //10.- Access the 'JavaScript' string characters using a random number.
-        
+        let Js = "JavaScript";
+        let rn = Math.random();
+        let los = rn * Js.length;
+        let insT = Math.floor(los);
+        console.log( "10.-", Js[insT] );
+    //11.- Use console.log() and escape characters to print the following pattern.
+        console.log( "11.- \n1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125" );
+    //12.- Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
+        console.log( "12.- ", because.substr(31,23) );
+//Exercises: Level 3
+    console.log( "\n                               Exercises - Level 3:\n" );
+    console.log( "Exercises level three:" );
+    //1.- 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
+        let love = "Love is the best thing in this world. Some found their love and some are still looking for their love.";
+        console.log( "1.- ", love.match("Love")  );

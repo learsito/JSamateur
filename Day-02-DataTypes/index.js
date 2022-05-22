@@ -98,7 +98,7 @@ console.log(string4.replace('JavaScript','Python'));
 let country2 = 'Finland';
 console.log(country2.replace('Fin','Noman'));
 
-    //  charEt(): Takes index and it returns the value at that index
+    //  charAt(): Takes index and it returns the value at that index
 let string5 = '30 Days Of JavaScript';
 console.log(string5.charAt(0));
 
