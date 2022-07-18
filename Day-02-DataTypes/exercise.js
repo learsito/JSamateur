@@ -156,4 +156,4 @@
 
         let annualIncome = ' ';
 
-        console.log(annualIncome);
+        console.log( "4.- ", annualIncome);
