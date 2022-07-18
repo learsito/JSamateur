@@ -154,6 +154,12 @@
         
         let heEarns = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.';
 
-        let annualIncome = ' ';
+        let heEarnsSplitted = heEarns.split(',');
 
-        console.log( "4.- ", annualIncome);
+        let monthSalary = parseInt(heEarnsSplitted[0].match(/\d+/g));
+        let monthCourses = parseInt(heEarnsSplitted[2].match(/\d+/g));
+        let annualBonus = parseInt(heEarnsSplitted[1].match(/\d+/g));
+
+        let annualIncome = ((monthSalary + monthCourses)* 12) + annualBonus;
+
+        console.log( "4.- ", heEarns, ' His annual income is: ', annualIncome);
