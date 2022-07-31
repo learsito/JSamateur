@@ -6,12 +6,12 @@
 
     //Example: Boolean Values
 
-    let isLightOn = true
-    let isRaining = false
-    let isHungry = false 
-    let isMarried = true 
-    let trueValue = 4 > 3   // true
-    let falseValue = 4 < 3  //false
+    let isLightOn = true;
+    let isRaining = false;
+    let isHungry = false; 
+    let isMarried = true; 
+    let trueValue = 4 > 3;  // true
+    let falseValue = 4 < 3;  //false
 
     // We agreed that boolean values are either true or false.
 
@@ -36,4 +36,22 @@
 
 //Undefined
 
-    /* If we declare  */
+    /* If we declare   a variable and if we do not assign a value, the value will be undefined.
+         In addition to this, if a function is not returning the value, it will be undefined */
+
+    let firstName;
+    console.log(firstName); //not defined, cuz it is not assigned to a value yet.
+
+//NULL
+
+    let empty = null;
+    console.log(empty); // -> null, means no value.
+
+//Operators
+    //Assignment operators.
+        /* An equal sign in JavaScript is an assignment operator. It uses to assign a variable. */
+
+        let firstNam =  'Diego';
+        let country = 'Mexico';
+
+        //Assignment Operators 
