@@ -33,7 +33,19 @@
 
     /* It is good to remember those truthy values and falsy values.
          In later section, we will use them with conditions to make decisions. */
-
+ 
 //Undefined
 
-    /* If we declare  */
+    /* If we declare  a variable and if we do not assign a value, the value will be
+          undeined. In addition to this, if a function is not returning the value 
+          it will be undefined.*/
+          let firstName;
+          console.log(firstName); //not defined, because it is not assigned to a value yet.
+
+    /* NULL*/
+        let empty = null;
+        console.log(empty) // -> null, means no value.
+    
+    //OPERATORS
+        //Assignment Operators
+            //
