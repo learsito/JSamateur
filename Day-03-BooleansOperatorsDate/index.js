@@ -111,4 +111,48 @@
                );
 
             //Comparison Operators
-                /*  In programming     */
+                /*  In programming we compare values, we use comparison operators to compare two values. We check if a value is greater or less or equal to other value.
+                
+                            OPERATOR                                    NAME                                                 EXAMPLE
+                                ==                                              Equal                                                 x == y
+                                ===                                     Exactly equal                                      x === y
+                                !=                                          Not equal                                             x != y
+                                >                                       Greater than                                            x > y
+                                <                                           Less than                                               x < y
+                                >=                              Greater than or equal to                             x >= y
+                                <=                              Less than or equal to                                    x <= y                      */
+
+            //Example: Comparison Operators 
+                
+                    console.log(3 > 2);
+                    console.log(3 >= 2);
+                    console.log(3 < 2);
+                    console.log( 2 < 3 );
+                    console.log( 2 <= 3 );
+                    console.log( 3 == 2 );
+                    console.log( 3 != 2 );
+                    console.log( 3 == '3' );
+                    console.log( 3 === '3' );
+                    console.log( 3 !== '3' );
+                    console.log( 3 != 3 );
+                    console.log( 3 !== 3 );
+                    console.log( 0 == false );
+                    console.log( 0 === false );
+                    console.log( 0 == '' );
+                    console.log( 0 == ' ' );
+                    console.log( 0 === '' );
+                    console.log( 1 == true );
+                    console.log( 1 ===true );
+                    console.log( undefined == null );
+                    console.log( undefined === null );
+                    console.log( NaN == NaN );
+                    console.log( NaN === NaN );
+                    console.log(  typeof NaN );
+
+                    console.log( 'mango'.length == 'avocado'.length );
+                    console.log( 'mango'.length != 'avocado'.length );
+                    console.log( 'mango'.length < 'avocado'.length );
+                    console.log( 'milk'.length == 'meat'.length );
+                    console.log( 'milk'.length != 'meat'.length );
+                    console.log( 'tomato'.length == 'potato'.length );
+                    console.log( 'python'.length > 'dragon'.length );
