@@ -124,35 +124,35 @@
 
             //Example: Comparison Operators 
                 
-                    console.log(3 > 2);
-                    console.log(3 >= 2);
-                    console.log(3 < 2);
-                    console.log( 2 < 3 );
-                    console.log( 2 <= 3 );
-                    console.log( 3 == 2 );
-                    console.log( 3 != 2 );
-                    console.log( 3 == '3' );
-                    console.log( 3 === '3' );
-                    console.log( 3 !== '3' );
-                    console.log( 3 != 3 );
-                    console.log( 3 !== 3 );
-                    console.log( 0 == false );
-                    console.log( 0 === false );
-                    console.log( 0 == '' );
-                    console.log( 0 == ' ' );
-                    console.log( 0 === '' );
-                    console.log( 1 == true );
-                    console.log( 1 ===true );
-                    console.log( undefined == null );
-                    console.log( undefined === null );
-                    console.log( NaN == NaN );
-                    console.log( NaN === NaN );
-                    console.log(  typeof NaN );
+                    console.log(3 > 2);                                         //true, cause 3 is greater than 2
+                    console.log(3 >= 2);                                       //true, cause 3 is grater than 2
+                    console.log(3 < 2);                                         //false, cause cause 3 is grater than 2
+                    console.log( 2 < 3 );                                       //true, cause 2 is less than 3
+                    console.log( 2 <= 3 );                                      //  
+                    console.log( 3 == 2 );                                      //
+                    console.log( 3 != 2 );                                      //
+                    console.log( 3 == '3' );                                    //
+                    console.log( 3 === '3' );                                   //
+                    console.log( 3 !== '3' );                                   //
+                    console.log( 3 != 3 );                                          //
+                    console.log( 3 !== 3 );                                         //
+                    console.log( 0 == false );                                  //
+                    console.log( 0 === false );                                 //
+                    console.log( 0 == '' );                                         //
+                    console.log( 0 == ' ' );                                            //
+                    console.log( 0 === '' );                                            //
+                    console.log( 1 == true );                                           //
+                    console.log( 1 ===true );                                           //
+                    console.log( undefined == null );                           //
+                    console.log( undefined === null );                          //
+                    console.log( NaN == NaN );                                          //
+                    console.log( NaN === NaN );                                         //
+                    console.log(  typeof NaN );                                         //
 
-                    console.log( 'mango'.length == 'avocado'.length );
-                    console.log( 'mango'.length != 'avocado'.length );
-                    console.log( 'mango'.length < 'avocado'.length );
-                    console.log( 'milk'.length == 'meat'.length );
-                    console.log( 'milk'.length != 'meat'.length );
-                    console.log( 'tomato'.length == 'potato'.length );
-                    console.log( 'python'.length > 'dragon'.length );
+                    console.log( 'mango'.length == 'avocado'.length );  //
+                    console.log( 'mango'.length != 'avocado'.length );  //
+                    console.log( 'mango'.length < 'avocado'.length );   //
+                    console.log( 'milk'.length == 'meat'.length );          //
+                    console.log( 'milk'.length != 'meat'.length );          //
+                    console.log( 'tomato'.length == 'potato'.length );//
+                    console.log( 'python'.length > 'dragon'.length );   //
