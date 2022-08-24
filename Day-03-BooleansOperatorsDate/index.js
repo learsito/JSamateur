@@ -156,3 +156,12 @@
                     console.log( 'milk'.length != 'meat'.length );          //
                     console.log( 'tomato'.length == 'potato'.length );//
                     console.log( 'python'.length > 'dragon'.length );   //
+
+                    /* Try to understand the above comparisons with some logic. Remembering without any logic might be difficult. JavaScript is somehow a wired kind programming language.
+                    JavaScript code run and give you a result but unless you are good at it may not be the desired result */
+
+                    /* As rule of thumb, if a value is not true with == it will not be equal with ===. Using === is safer than using ==. The following link has an exhaustic list of comparison
+                    of data types: https://dorey.github.io/JavaScript-Equality-Table/ */
+
+                    //Logical Operators:
+                    /* The following */
