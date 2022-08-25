@@ -164,4 +164,22 @@
                     of data types: https://dorey.github.io/JavaScript-Equality-Table/ */
 
                     //Logical Operators:
-                    /* The following */
+                    /* The following symbols are the common logical operators: &&(ampersand), ||(pipe)> it means or {if and only if}, and !(negation). The && operator gets true only if the two operators are true.
+                            The || operator gets true either of the operand is true. The ! operator negates true to false and false to true.*/
+
+                                    // && ampersand operator example:
+                                    const check = 4 > 3 && 10 > 5; // true && true -> true
+                                    const check0 = 4 > 3 && 10 < 5; // true && false -> false
+                                    const check1 = 4 < 3 && 10 < 5; // false && false -> false
+
+                                    // || pipe or operator, example:
+                                    const check2 = 4 > 3 || 10 > 5; // true || true -> true
+                                    const check3 = 4 > 3 || 10 < 5; //true || false -> true 
+                                    const check4 = 4 < 3 || 10 < 5; // false || false -> false
+
+                                    // ! negation examples:
+                                    let check5 = 4 > 3;                                     //true
+                                    let check6 = !(4 > 3);                               //false
+                                    let IsLightOn = true;                             //
+                                    let isLightOff = !IsLightOn;             //false
+                                    let IsMarried = !false;                         //true
