@@ -183,3 +183,94 @@
                                     let IsLightOn = true;                             //
                                     let isLightOff = !IsLightOn;             //false
                                     let IsMarried = !false;                         //true
+
+                        //INCREMENT OPERATORS:
+                            /* In JavaScript we use the increment operator to increase a value stored in a variable. The increment could be pre or post increment. Let us see each of them: */
+                                    //1.- Pre-increment
+                                        let count = 0;
+                                        console.log(++count);       //1
+                                        console.log(count);           //1
+
+                                    //2.- Post-increment
+                                        let count0 = 0;
+                                        console.log(count0++);      //0
+                                        console.log(count0);           //1
+
+                            /* We use most of the time post-increment. At least you should remember how to use post-increment operator. */
+                        
+                        //Decrement Operator:
+                            /* In JavaScript we use the decrement operator to decrease a value stored in a variable. The decrement could be pre or post decrement- Let us see each of them: */
+                                //1.-Pre-decrement
+                                    let count1 = 0;
+                                    console.log(--count1); //-1
+                                    console.log(count1);    //-1
+                                //2.-Post-decrement
+                                    let count2 = 0;
+                                    console.log(count2--); // 0
+                                    console.log(count2);    //-1
+                    
+                    //TERNARY OPERATORS
+                            /* Ternary operators allows to write a condition. Another way to write conditionals is using ternary operators. look at the following examples: */
+                                    let isRaining0 = true;
+                                    isRaining0
+                                        ? console.log('You need a rain coat')
+                                        : console.log('No need for a rain coat');
+                                                /* Syntax: 
+                                                      condition ? expr1 : expr2 */
+                                        isRaining0 = false;
+                                        isRaining0 ? console.log('U need a rain coat') : console.log('No need for a rain coat');
+
+                                        let number = 5;
+                                        number > 0 ? console.log(`${number} is a positive number`) : console.log(`${number} is a negative number`);
+
+                                        number = -5;
+                                        number > 0
+                                            ? console.log(`${number} is a positive number`)
+                                            : console.log(`${number} is a negative number`);
+
+                    //OPERATOR PRECEDENCE:
+                    /* I would like to recommend you to read about operator precedence from this link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence */
+
+                    //Window methods
+                        // Windows alert() method
+                            /* As you have seen at very beginning alert() method displays an alert box with a specified message and an OK button. It is a builtin method and it takes an argument. */
+                                let message = 'Mensaje';   
+                                alert(message);
+                                alert('Welcome to 30DaysOfJavaScript')
+                            /* Do not use too much alert because it is destructing and annoying, use it just to test. */
+
+                        //Window prompt() method
+                            /* The window prompt methods display a prompt box with an input on your browser to take input values and the input data can be stored in a variable. The prompt() methos takes two arguments.
+                            The second argument is optional. */
+
+                                prompt('required text', 'optional text');
+                                let number0 = prompt('Enter number','Number goes here');
+                                console.log(number0);
+                        //Window confirm() method
+                            /* The confirm() method displays a dialog box with a specified message, along along with an OK and cancel button. A confirm box is often used to ask permission from a user to execute something.
+                            Window confirm() takes a string as an argument. Clicking the OK yields true value, whereas clicking the Cancel button yields false value. */
+
+                                const agree = confirm('Are you sure you would like to delete? ');
+                                console.log(agree) // Result will be true or false based on what you click on the dialog box.
+
+                            /* These are not all the window methos we will have a separate section to go deep into window methods. */
+                        
+            //DATE OBJECT:
+                /* Time is an important thing. We like to know the time a certain activity or event. In JavaScript current time and date is created using JavaScript Date Object.
+                The object we create using Date object provides many methods to work with date and time. The methods we use to get date and time information from a date object values
+                are started with a word 'get' because it provide the information. getFullYear(), getMonth(), getDate(), getDay(), getHours(), getMinutes(), getSeconds(), 
+                getMilliseconds(), getTime(), getDay() */
+
+                    //Method                                                            Description                                                             Examples
+                let getFullYear                 =         'Get the year as a four digit number (yyyy)'                  //2020
+                let getMonth                        =           'Get the month as a number (0-11)'                                   //0
+                let getDate                         =           ' Get the day as a number (1-31) '                                          //4
+                let getHours                        =           'Get the hour (0-23) '                                                              //0
+                let getMinutes                  =               ' Get the minute 0-59 '                                                         //56
+                let getSeconds                  =                   'Get the second (0-59) '                                                    //41
+                let getMilliseconds       =                                 'Get the millisecond (0-999) '                        //341
+                let getTime                         =     'Get the time (milliseconds since January 1, 1970) '      //1578092201341
+                let getDay                          =                   'Get the weekday as a number (0-6) '                                //6
+
+            //Creating a time object
+                /* Once */
