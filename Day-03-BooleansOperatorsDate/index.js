@@ -234,24 +234,24 @@
                     //Window methods
                         // Windows alert() method
                             /* As you have seen at very beginning alert() method displays an alert box with a specified message and an OK button. It is a builtin method and it takes an argument. */
-                                let message = 'Mensaje';   
-                                alert(message);
-                                alert('Welcome to 30DaysOfJavaScript')
+                                //let message = 'Mensaje';   
+                                //alert(message);
+                                //alert('Welcome to 30DaysOfJavaScript')
                             /* Do not use too much alert because it is destructing and annoying, use it just to test. */
 
                         //Window prompt() method
                             /* The window prompt methods display a prompt box with an input on your browser to take input values and the input data can be stored in a variable. The prompt() methos takes two arguments.
                             The second argument is optional. */
 
-                                prompt('required text', 'optional text');
-                                let number0 = prompt('Enter number','Number goes here');
-                                console.log(number0);
+                                //prompt('required text', 'optional text');
+                                //let number0 = prompt('Enter number','Number goes here');
+                                //console.log(number0);
                         //Window confirm() method
                             /* The confirm() method displays a dialog box with a specified message, along along with an OK and cancel button. A confirm box is often used to ask permission from a user to execute something.
                             Window confirm() takes a string as an argument. Clicking the OK yields true value, whereas clicking the Cancel button yields false value. */
 
-                                const agree = confirm('Are you sure you would like to delete? ');
-                                console.log(agree) // Result will be true or false based on what you click on the dialog box.
+                                //const agree = confirm('Are you sure you would like to delete? ');
+                                //console.log(agree) // Result will be true or false based on what you click on the dialog box.
 
                             /* These are not all the window methos we will have a separate section to go deep into window methods. */
                         
@@ -273,4 +273,52 @@
                 let getDay                          =                   'Get the weekday as a number (0-6) '                                //6
 
             //Creating a time object
-                /* Once */
+                /* Once we create time object. The time object will provide information about time. Let us crate a time object: */
+                    const now = new Date()
+                    console.log("El now solo es: ",now);
+                /* We have crated a time object and we can access any date time information from the object 
+                using the get methods we have mentioned on the table. */
+            //Getting full year
+                /* Let's extract or get the full year from a time object. */
+                    console.log('Con .getFullYear() es:',now.getFullYear());
+            //Getting month
+                /* Let's extract or get the month from a time object. */
+                    console.log('Con . getMonth() es:',now.getMonth());
+            //Getting date.
+                /* Let's extract or get the date of the month from a time object. */
+                    console.log('Con .getDate() es:',now.getDate());
+            //Getting day
+                /* Let's extract or get the day of the week from a time object. */
+                    console.log('Con getDay() es:',now.getDay()); /* Result is 6 cause the day is saturday which is the 7th day. Sunday is 0, Monday is 1 and Saturday is 6. Getting the weekday as a number (0-6) */
+            //Getting hours.
+                /* Let's extract or get the hours from a time object. */
+                    console.log('Con .getHours() es:',now.getHours());
+            //Getting minutes
+                /* Let's extract or get the minutes from a time object. */
+                    console.log('Con .getMinutes() es: ', now.getMinutes());
+            //Getting secons
+                /* Let's extract or get the seconds from a time object. */
+                    console.log( 'Con .getSeconds() es: ',now.getSeconds());
+            //Getting time
+                /* This method give time in milliseconds starting from January 1, 1970. It is also know as Unix time.
+                We can get the unix time in two ways: */
+                    //1.- Using getTime()
+                        console.log('Con .getTime() es: ',now.getTime());
+                    //2.- Using Date.now()
+                        const allSeconds = Date.now();
+                        console.log(allSeconds);
+
+                        const timeInSeconds = new Date().getTime();
+                        console.log(allSeconds == timeInSeconds);
+            //Let us format these values to a human readable time format. Example:
+                const now1= new Date();
+                const year= now.getFullYear(); //
+                const month = now.getMonth() + 1; //
+                const date = now.getDate(); //
+                const hours = now.getHours(); //
+                const minutes = now.getMinutes(); //
+
+                console.log( `${date}/${month}/${year} ${hours}:${minutes}` )
+
+                /* You have boundless energy. You have just completed day 3 challenges and you are three
+                steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle. */
