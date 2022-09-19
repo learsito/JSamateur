@@ -69,3 +69,52 @@ console.log( 'EXERCISES: LEVEL 1' );
         let python = 'python';
         let jargon = 'jargon';
         console.log( 'the comparison: python.length != argon.length is: ', python.length != jargon.length );
+
+        /* 6.- Figure out the result of the following expressions first without using console.log().
+        After you decide the result confirm it by using console.log() */
+        console.log( 'Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()' );
+        let comPa = 4 > 3 && 10 < 12
+        console.log( "6.1.- This comparison result should be true, and the result is: ", comPa );
+        let comPa0 = 4 > 3 && 10 > 12
+        console.log( "6.2.- This comparison result should be false, and the result is: ", comPa0 );
+        let comPa1 = 4 > 3 || 10 < 12
+        console.log( "6.3.- This comparison result should be true, and the result is: ", comPa1 );
+        let comPa2 = 4 > 3 || 10 > 12
+        console.log( "6.4.- This comparison result should be true, and the result is: ", comPa2 );
+        let comPa3 = !(4>3)
+        console.log( "6.5.- This comparison result should be false, and the result is: ", comPa3 );
+        let comPa4 = !(4<3)
+        console.log( "6.6.- This comparison result should be true, and the result is: ", comPa4 );
+        let comPa5 = !(false)
+        console.log( "6.7.- This comparison result should be true, and the result is: ", comPa5 );
+        let comPa6 = !(4>3 && 10 < 12)
+        console.log( "6.8.- This comparison result should be false, and the result is: ", comPa6 );
+        let comPa7 = !(4 > 3 && 10 > 12)
+        console.log( "6.9.- This comparison result should be true, and the result is: ", comPa7 );
+        let comPa8 = !(4 === '4')
+        console.log( "6.10.- This comparison result should be true, and the result is: ", comPa8 );
+        console.log( "6.11.-There is no 'on' in both dragon and python " );
+        let dragon = 'dragon';
+        let dragOn = dragon.indexOf('on');
+        let pythOn = python.indexOf('on');
+        //console.log( 'This comparison should be false, and the result is:  ',dragOn && pythOn == -1 );
+        console.log( 'This comparison should be false, and the result is:  ', dragon.indexOf('on') && python.indexOf('on') == false );
+        /* 7.- Use the Date obect to do the following activities:*/
+        console.log( '7.- Use the Date object to do the following activities: ' );
+        const now = new Date();
+        console.log( "7.1.- What is the year today? R= ", now.getFullYear() );
+        console.log( "7.2.- What is the month today as a number?", now.getMonth() +1  );
+        console.log( "7.3.- What is the date today?", now.getDate() );
+        console.log( "7.4.- What is the day today as a number?", now.getDay() +1 );
+        console.log( "7.5.- What is the hours now?", now.getHours() );
+        console.log( "7.6.- What is the minutes now?", now.getMinutes() );
+        console.log( "7.7.- Find out the numbers of seconds elapsed from January 1, 1970 to now.", now.getTime() );
+    /* Exercises: Level 2 */
+    console.log( 'Exercises: Level 2 ' );
+        console.log( '1.- Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (Area = 0.5 x b x h).' );
+        let base = prompt( 'Type a random base of a triangle: ', 'Example: 15' );
+        let height = prompt( 'Now type a random height of a triangle: ', 'Example: 20' );
+        base = parseInt(base);
+        height = parseInt(height);
+        let result = 0.5 * base * height;
+        let theConfirmation = confirm( `The area of your triangle is: ${result} `  );
