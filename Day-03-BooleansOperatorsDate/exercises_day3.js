@@ -112,9 +112,20 @@ console.log( 'EXERCISES: LEVEL 1' );
     /* Exercises: Level 2 */
     console.log( 'Exercises: Level 2 ' );
         console.log( '1.- Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (Area = 0.5 x b x h).' );
-        let base = prompt( 'Type a random base of a triangle: ', 'Example: 15' );
-        let height = prompt( 'Now type a random height of a triangle: ', 'Example: 20' );
-        base = parseInt(base);
-        height = parseInt(height);
-        let result = 0.5 * base * height;
-        let theConfirmation = confirm( `The area of your triangle is: ${result} `  );
+            let base = prompt( 'Type a random base of a triangle: ', 'Example: 15' );
+            let height = prompt( 'Now type a random height of a triangle: ', 'Example: 20' );
+            base = parseInt(base);
+            height = parseInt(height);
+            let result = 0.5 * base * height;
+            let theConfirmation = confirm( `The area of your triangle is: ${result} `  );
+    
+        console.log( "2.- Write a script that prompt the user to enter side a, side b, and side c of the triangle and calculate the perimeter of a triangle (perimeter = a + b + c)" );
+            let sideA = prompt('Enter side A: ', '5');
+            let sideB = prompt('Enter side B: ', '4');
+            let sideC = prompt('Enter side C: ', '3');
+            sideA = parseInt(sideA);
+            sideB = parseInt(sideB);
+            sideC = parseInt(sideC);
+            let trianglePerimeter = sideA + sideB + sideC;
+            confirm( `The perimeter of the triangle is ${trianglePerimeter}` );
+        console.log( '3.- ' );
