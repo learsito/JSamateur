@@ -128,4 +128,18 @@ console.log( 'EXERCISES: LEVEL 1' );
             sideC = parseInt(sideC);
             let trianglePerimeter = sideA + sideB + sideC;
             confirm( `The perimeter of the triangle is ${trianglePerimeter}` );
-        console.log( '3.- ' );
+        console.log( '3.- Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))' );
+            let length = prompt( 'Enter length: ', '10' );
+            let width = prompt('Enter width: ','15');
+            length = parseInt(length);
+            width = parseInt(width);
+            let rectangleArea = length * width;
+            let rectanglePerimeter = 2 * (length + width);
+            confirm(`The area of your rectangle is: ${rectangleArea}, and the perimeter is: ${rectanglePerimeter}.`);
+        console.log('4.- Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.');
+            const pi = 3.14
+            let radius = prompt('Enter the radius of a circle: ', '7');
+            let circleArea = pi * radius * radius;
+            confirm(`The area of your circle is ${circleArea}.`);
+        console.log('5.- Calculate the earring, the interseccion x and the interseccion y of y = 2x -2');
+        
