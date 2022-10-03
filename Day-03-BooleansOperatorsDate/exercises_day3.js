@@ -142,4 +142,61 @@ console.log( 'EXERCISES: LEVEL 1' );
             let circleArea = pi * radius * radius;
             confirm(`The area of your circle is ${circleArea}.`);
         console.log('5.- Calculate the earring, the interseccion x and the interseccion y of y = 2x -2');
+        console.log( '9.- Write a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?' );
+            let hours = prompt( 'Enter hours: ', '40' );
+            let ratePerHour = prompt( 'Enter rate per hour: ', '65' )
+            hours = parseInt(hours);
+            ratePerHour = parseInt(ratePerHour);
+            weeklyEarning = hours * ratePerHour;
+            confirm( `Your weekly earning is ${weeklyEarning}` );
+        console.log('10- If the length of your name is grater than 7, say your name is long, else say your name is short. ');
+            let naMe = prompt('Enter your name.', 'Diego');
+            naMe.length > 7
+            ? confirm('Your name is long')
+            : confirm('Your name is short');
+        console.log('11.- Compare your first name length and your family name length and you should get this output: ');
+        //Your first name, Asabeneth is longer than your family name, Yetayeh
+            firstName = prompt('Enter your first name','Diego');
+            lastName = prompt('Enter your last name', 'Villaseñor');
+            firstName.length > lastName.length
+            ? confirm(`Your first name, ${firstName} is lonher than your family name, ${lastName}`)
+            : confirm(`Your family name, ${lastName} is longer than your first name, ${firstName}`);
+        console.log('12.- Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.');
+            let myAge = prompt('Enter your age','24');
+            let yourAge = prompt("Enter your partner's age",'57');
+            myAge = parseInt(myAge);
+            yourAge = parseInt(yourAge);
+            let thisOlderThan;
+            myAge > yourAge
+            ? thisOlderThan = myAge - yourAge
+            : thisOlderThan = yourAge - myAge;
+                myAge > yourAge
+                ? confirm(`I am ${thisOlderThan} years older than you`)
+                : confirm(` You are ${thisOlderThan} years older than me`);
+        console.log('13.- Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.');
+            let currentYear = now.getFullYear();
+            let birthYear = prompt('Enter birth year: ','1998')
+            let thisManAge = currentYear - birthYear;
+            let thisManyYears = 18 - thisManAge;
+            thisManAge >= 18
+            ? confirm(`You are ${thisManAge}. You are old enough to frive`)
+            : confirm(`You are ${thisManAge}. You will be able to drive after ${thisManyYears} years`);
+        console.log('14.- Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years');
+        console.log('15.- Create a human readable time format using the Date time object');
+            let yeAr= now.getFullYear()
+            let month = now.getMonth() + 1
+            let day = now.getDate()
+            let hour = now.getHours()
+            let minute = now.getMinutes()
         
+            day < 10 ? day = '0'+ day : day = day;
+            month < 10 ? month = '0' + month : month = month;
+            hour < 10 ? hour = '0' + hour : hour = hour;
+            minute < 10 ? minute = '0' + minute : minute = minute;
+
+            console.log(`1.- ${year}-${month}-${day}    ${hour}:${minute}`);
+            console.log(`2.- ${day}-${month}-${year}    ${hour}:${minute}`);
+            console.log(`3.- ${day}/${month}/${year}    ${hour}:${minute}`);
+    console.log('Exercises: Level 3');
+        console.log('1.- Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )');
+            confirm(`Date: ${year}-${month}-${day}    ${hour}:${minute}`);
