@@ -1,4 +1,3 @@
-let enterNumber = prompt('Enter a number');
-let remainder = enterNumber % 2;
+let project = new Array(10);
 
-confirm(`The remainder is ${remainder}`);
+console.log(project);
